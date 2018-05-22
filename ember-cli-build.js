@@ -50,7 +50,9 @@ module.exports = function (defaults) {
 		},
 		visualTest: {
 			groupByOs: false,
-			imgurClientId: 'ab7e2d559faef26'
+			imgurClientId: 'ab7e2d559faef26',
+			windowWidth: 1024,
+			windowHeight: 800
 			
 		},
 		includePolyfill: EmberAddon.env() === 'test'
