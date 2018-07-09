@@ -382,44 +382,44 @@
 	}
 
 	&__community-bar {
-		display: flex;
 		align-items: center;
-		position: absolute;
-		left: 0;
-		top: 0;
+		display: flex;
 		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
 		visibility: hidden;
 	}
 
 	&__logo-heart {
 		background-color: #002a33;
 		height: 100%;
-		width: 27px;
 		padding: 0 0 0 12px;
 		position: relative;
+		width: 27px;
 		z-index: 1;
 	}
 
 	&__community-bar-separator {
 		border-left: 1px solid $wds-fandom-color-dark-gray;
-		opacity: 0;
 		height: 30px;
 		margin-left: 12px;
+		opacity: 0;
 		width: 1px;
 	}
 
 	.wds-community-bar__sitename {
 		color: #fff;
-		max-width: calc(100vw - 120px);
 		margin-left: 12px;
+		max-width: calc(100vw - 120px);
 		transform: translateY(-55px);
 		transition: transform $scroll-animation-duration;
 	}
 
 	&.wds-is-community-bar-in:not(.wds-is-modal-opened) {
 		@media #{$wds-breakpoint-small-down} {
-			overflow: hidden;
 			box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+			overflow: hidden;
 
 			.wds-global-navigation__logo {
 				transform: translateY(55px);
@@ -435,10 +435,10 @@
 				}
 
 				&__community-bar-separator {
-					animation-name: separator;
-					animation-duration: $scroll-animation-duration;
 					animation-delay: $scroll-animation-duration;
+					animation-duration: $scroll-animation-duration;
 					animation-fill-mode: forwards;
+					animation-name: separator;
 				}
 
 				&__modal-control-search svg {
